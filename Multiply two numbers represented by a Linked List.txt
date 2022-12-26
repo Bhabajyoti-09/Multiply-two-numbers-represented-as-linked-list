@@ -1,0 +1,15 @@
+long long  multiplyTwoLists (Node* l1, Node* l2)
+{
+  long long first=0,second=0;
+  while(l1!=NULL){
+      first=(10*first +l1->data)%1000000007;
+      l1=l1->next;
+  }
+  while(l2!=NULL){
+      second=(10*second + l2->data)%1000000007;
+      l2=l2->next;
+      
+  }
+  return (first*second)%1000000007;
+}
+      
